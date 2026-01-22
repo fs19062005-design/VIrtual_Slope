@@ -1,0 +1,50 @@
+
+
+# Backseat API parameters
+backseat_ip: "140.102.1.1"           # IP for backseat API
+backseat_port: 11080                  # Port for backseat API
+backseat_connection_timeout: 5        # Connection timeout (seconds)
+backseat_response_timeout: 5         # Response timeout (seconds)
+overload_command_duration: 5         # Duration for overload command validity (seconds)
+
+# Virtual Slope parameters
+max_angle: 13.0                       # degrees - max angle for ascend/return
+command_period: 1                   # VS command period (seconds)
+
+# DesBridge server defaults
+desbridge_host: "0.0.0.0"        # Default bind address for DesBridge server
+desbridge_port: 12000                 # Default port for DesBridge server
+
+# Safety parameters
+altitude_threshold_level: 1.0        # meters - HOLD threshold
+altitude_threshold_ascend: 10.0        # meters - ASCEND (critical) threshold
+wait_time: 3.0                        # seconds - stabilization wait after ascend
+
+# Depth limits
+min_depth: 0                          # meters - minimum allowed depth
+max_depth: 3000                       # meters - maximum allowed depth
+
+# Monitoring parameters
+monitoring_check_interval: 1          # seconds - phase check interval
+
+# Line start detection tolerances
+line_start_tolerance_lat_lon_meters: 8.0    # meters - horizontal position tolerance
+line_start_tolerance_depth_meters: 3.0      # meters - depth tolerance  
+line_start_tolerance_heading_degrees: 15.0   # degrees - heading tolerance
+
+# Subphase coordinate tolerance
+subphase_coordinates_tolerance_meters: 8.0   # meters - tolerance for subphase START/END coordinates             
+
+# Test mode configuration (for safety system testing)
+test_mode: false                            # Enable simulated altitude source
+test_initial_bottom_depth: 3000.0             # Initial simulated bottom depth (meters)
+
+# Logging configuration
+log_directory: "logs"                 # Path to log file 
+console_log_level: "DEBUG"            # Console log level (DEBUG, INFO, WARNING, ERROR)
+file_log_level: "DEBUG"              # File log level (DEBUG, INFO, WARNING, ERROR)
+
+# Paths
+params_directory: "C:/Users/Felix Sizemskii/Desktop"
+
+transition_time: 15
