@@ -10,7 +10,7 @@ AUV A18D depth control system integrated safety features.
 * Error compensation for trajectory accuracy
 * Integration with navigation and backseat driver APIs
 * Support for both UP and DOWN trajectories
-* Support for multiple missions compains
+* Support for multiple-mission campaigns
 
 ## Installation
 
